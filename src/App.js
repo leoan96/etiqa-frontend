@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import AddFreelancer from "./components/add-freelancer.component";
-import Freelancer from "./components/freelancer.component";
-import FreelancerList from "./components/freelancer-list.component";
+// import Freelancer from "./components/freelancer.component";
+// import FreelancerList from "./components/freelancer-list.component";
 
 function App() {
   return (
@@ -30,13 +30,13 @@ function App() {
 
       <div className="container mt-3">
         <Switch>
-          <Route
+          {/* <Route
             exact
             path={["/", "/freelancers"]}
             component={FreelancerList}
-          />
+          /> */}
           <Route exact path="/add" component={AddFreelancer} />
-          <Route path="/freelancer/:id" component={Freelancer} />
+          {/* <Route path="/freelancer/:id" component={Freelancer} /> */}
         </Switch>
       </div>
     </div>

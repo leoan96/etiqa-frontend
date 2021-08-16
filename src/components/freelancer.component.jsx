@@ -52,7 +52,7 @@ const Freelancer = (props) => {
     };
 
     try {
-      const response = await userApi.updateUser(currentFreelancer["_id"], data);
+      await userApi.updateUser(currentFreelancer["_id"], data);
       setMessage("Freelancer was updated successfully!");
       props.history.push("/freelancers");
     } catch (err) {
@@ -65,7 +65,7 @@ const Freelancer = (props) => {
 
   const deleteFreelancer = async () => {
     try {
-      const response = await userApi.deleteUser(currentFreelancer["_id"]);
+      await userApi.deleteUser(currentFreelancer["_id"]);
       setMessage("Freelancer was deleted successfully!");
       props.history.push("/freelancers");
     } catch (err) {
@@ -82,6 +82,17 @@ const Freelancer = (props) => {
         <div className="edit-form">
           <h4>Freelancer</h4>
           <form>
+            <div className="form-group">
+              <label htmlFor="id">ID</label>
+              <input
+                type="text"
+                className="form-control"
+                id="id"
+                name="id"
+                value={currentFreelancer["_id"]}
+                onChange={handleInputChange}
+              />
+            </div>
             <div className="form-group">
               <label htmlFor="username">Username</label>
               <input

@@ -4,9 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![](images/freelancer.png)
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/leoan96/etiqa-frontend.git
+   ```
+2. ```sh
+   npm start
+   ```
 
 ### `npm start`
 

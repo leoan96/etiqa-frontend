@@ -28,7 +28,6 @@ const AddFreelancer = () => {
     };
 
     const baseUrl = process.env.REACT_APP_USER_API_BASEURL;
-    console.log(baseUrl);
     const userApi = UsersApiFactory(null, baseUrl);
 
     try {

@@ -18,3 +18,13 @@
   color: black;
   background-color: yellow;
 }
+
+.update {
+  color: black;
+  background-color: greenyellow;
+}
+
+.delete {
+  color: black;
+  background-color: red;
+}

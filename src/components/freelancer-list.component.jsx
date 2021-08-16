@@ -94,6 +94,12 @@ const FreelancerList = () => {
             <h4>Freelancer</h4>
             <div>
               <label>
+                <strong>ID:</strong>
+              </label>{" "}
+              {currentFreelancer["_id"]}
+            </div>
+            <div>
+              <label>
                 <strong>Username:</strong>
               </label>{" "}
               {currentFreelancer.username}
@@ -121,12 +127,6 @@ const FreelancerList = () => {
                 <strong>Hobby:</strong>
               </label>{" "}
               {currentFreelancer.hobby.join(", ")}
-            </div>
-            <div>
-              <label>
-                <strong>Status:</strong>
-              </label>{" "}
-              {currentFreelancer.published ? "Published" : "Pending"}
             </div>
 
             <Link
